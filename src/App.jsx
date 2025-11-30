@@ -272,7 +272,7 @@ function Dashboard({ switchPage }) {
               <div style={mobileMenuStyle}>
                 {[
                   "Home",
-                  "Applications",
+                  "Build your case",
                   "Support",
                   "Know Your Rights",
                   "About",
@@ -286,7 +286,7 @@ function Dashboard({ switchPage }) {
                       switchPage(
                         pageName === "Home"
                           ? "dashboard"
-                          : pageName === "Applications"
+                          : pageName === "Build your case"
                           ? "prepareCase"
                           : pageName === "Support"
                           ? "support"
@@ -308,7 +308,7 @@ function Dashboard({ switchPage }) {
           <div style={desktopNavLinksStyle}>
             {[
               "Home",
-              "Applications",
+              "Build your case",
               "Support",
               "Know Your Rights",
               "About",
@@ -321,7 +321,7 @@ function Dashboard({ switchPage }) {
                   switchPage(
                     pageName === "Home"
                       ? "dashboard"
-                      : pageName === "Applications"
+                      : pageName === "Build your case"
                       ? "prepareCase"
                       : pageName === "Support"
                       ? "support"
@@ -343,7 +343,7 @@ function Dashboard({ switchPage }) {
         <Card
           icon="📄"
           title="Build your case"
-          buttonText="Start Application"
+          buttonText="Build your case"
           onClick={() => switchPage("prepareCase")}
         />
         <Card

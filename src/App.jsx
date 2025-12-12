@@ -151,15 +151,14 @@ function AboutIntro({ goNext }) {
       <div style={formContainerStyle}>
         <h1 style={{ color: "black" }}>About This App</h1>
         <p style={{ marginTop: 20, lineHeight: 1.6, fontSize: 16, color: "black" }}>
-          Welcome! This app helps Southwark and Lambeth tenants who are facing
+          This app helps Southwark and Lambeth tenants who are facing
           eviction due to rent arrears. It guides you through preparing your
           housing duty case and understanding your rights.
         </p>
         <p style={{ marginTop: 15, color: "black" }}>
           Our goal is to stand by tenants during a difficult and often
-          overwhelming time, offering clear information and guidance so they can
-          move through the eviction process with confidence and support. When
-          you're ready, we can take the first step together by checking whether
+          overwhelming time, offering clear information and guidance so that you can
+          keep your house. When you're ready, we can take the first step together by checking whether
           you might qualify for legal aid.
         </p>
         <button onClick={goNext} style={{ ...buttonStyle, marginTop: 30 }}>
@@ -183,10 +182,9 @@ function About({ goBack }) {
           the necessary documents and information for court proceedings.
         </p>
         <p style={{ marginTop: 15, color: "black" }}>
-          Our goal is to stand by tenants during a difficult and often
-          overwhelming time, offering clear information and guidance so they can
-          move through the eviction process with confidence and support. When
-          you're ready, we can take the first step together by checking whether
+         Our goal is to stand by tenants during a difficult and often
+          overwhelming time, offering clear information and guidance so that you can
+          keep your house. When you're ready, we can take the first step together by checking whether
           you might qualify for legal aid.
         </p>
         <button onClick={goBack} style={{ ...buttonStyle, marginTop: 30 }}>
@@ -749,7 +747,7 @@ function KnowYourRights({ goBack }) {
         <div style={{ textAlign: "left", marginTop: 20, lineHeight: 1.6, color: "black", fontSize: 16 }}>
           <h3>🏠 Tenant Rights</h3>
           <ul>
-            <li>You must receive proper notice before eviction (Section 21 or Section 8 notices).</li>
+            <li>You must receive proper notice before eviction.</li>
             <li>You are entitled to live in a safe and habitable property.</li>
             <li>Your landlord cannot enter your home without proper notice, except in emergencies.</li>
           </ul>
@@ -767,7 +765,7 @@ function KnowYourRights({ goBack }) {
             <li>Report issues in writing and keep a record.</li>
           </ul>
 
-          <h4>💡 Tips for Court or Tribunal</h4>
+          <h4>💡 Tips for Court</h4>
           <ul>
             <li>Collect all documents: tenancy agreement, rent statements, notices, correspondence.</li>
             <li>Keep a record of any communications with your landlord.</li>
@@ -802,12 +800,36 @@ function Support({ goBack }) {
     <div style={pageStyle}>
       <div style={formContainerStyle}>
         <h1 style={{ color: "black" }}>Support Resources</h1>
-        <p style={{ color: "black", marginTop: 20, lineHeight: 1.8 }}>
-          🏠 Local housing support<br />
-          💰 Financial and debt advice<br />
-          ⚖️ Legal aid contacts<br />
-          🤝 Community support groups
-        </p>
+        <div class="support-links">
+  <h2>🏠 Local Housing Support</h2>
+  <ul>
+    <li><a href="https://england.shelter.org.uk" target="_blank">Shelter UK</a></li>
+    <li><a href="https://www.gov.uk/find-local-council" target="_blank">Find Local Council Housing Services</a></li>
+    <li><a href="https://www.housingrights.org.uk" target="_blank">Housing Rights</a></li>
+  </ul>
+
+  <h2>💰 Financial & Debt Advice</h2>
+  <ul>
+    <li><a href="https://www.citizensadvice.org.uk/debt-and-money/" target="_blank">Citizens Advice – Debt & Money</a></li>
+    <li><a href="https://www.stepchange.org" target="_blank">StepChange Debt Charity</a></li>
+    <li><a href="https://www.nationaldebtline.org" target="_blank">National Debtline</a></li>
+  </ul>
+
+  <h2>⚖️ Legal Aid Contacts</h2>
+  <ul>
+    <li><a href="https://www.gov.uk/check-legal-aid" target="_blank">Check Legal Aid Eligibility</a></li>
+    <li><a href="https://www.gov.uk/government/organisations/legal-aid-agency" target="_blank">Legal Aid Agency</a></li>
+    <li><a href="https://www.lawcentres.org.uk" target="_blank">Law Centres Network</a></li>
+  </ul>
+
+  <h2>🤝 Community Support Groups</h2>
+  <ul>
+    <li><a href="https://www.meetup.com" target="_blank">Meetup (Local Community Groups)</a></li>
+    <li><a href="https://www.mind.org.uk/information-support/local-minds/" target="_blank">Mind – Local Support Groups</a></li>
+    <li><a href="https://www.trusselltrust.org/get-help/" target="_blank">The Trussell Trust (Foodbanks)</a></li>
+  </ul>
+</div>
+
         <button onClick={goBack} style={{ ...buttonStyle, marginTop: 20 }}>
           Back to Dashboard
         </button>

@@ -674,7 +674,7 @@ function PrepareMyCase({ goBack }) {
                     }}
                   />
                 )}
-                <p style={{ color: "black" }}>Landlord response:</p>
+                <p style={{ color: "black" }}>Landlords Action:</p>
                 <textarea
                   placeholder="Describe response"
                   value={landlordResponse}
